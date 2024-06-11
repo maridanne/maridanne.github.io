@@ -18,26 +18,18 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-.cover {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+
+/* ALL SECTIONS */
+#cover, #about {
+    padding: 20px 0;
+    background-color: violet;
 }
+/* COVER SECTION */
 .cover-container {
     display: flex;
     gap: 20px;
-}
 
-.maridanne, .description {
-    flex: 1;
 }
-
-.maridanne img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     .cover-container {
@@ -47,6 +39,18 @@ body {
     .wrapper {
         padding: 0 20px;
     }
+}
+.maridanne, .description{
+    flex: 1;
+    min-width: 300px;
+    background-color: green;
+
+}
+
+.maridanne img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
 }
 
 .social-links {
@@ -63,4 +67,44 @@ body {
 
 .social-links a:hover {
     color: #2d4373; /* Darker shade on hover */
+}
+
+/* ABOUT SECTION */
+.about-desc, .tech-interest {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: yellow;
+    
+}
+.short-desc, .long-desc, .technologies-used, .other-interests{
+    flex: 1;
+    min-width: 300px;
+    background-color: crimson;
+}
+.short-desc,  .technologies-used{
+    font-size: 1.25rem;
+}
+
+.long-desc, .other-interests{
+    font-size: 1rem;
+    color: #555;
+}
+.technologies-used, .other-interests {
+    flex: 1;
+    min-width: 300px;
+    background-color: deeppink;
+}
+
+.d-flex{
+    background-color: aquamarine;
+    margin: 30px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-desc, .tech-interest {
+        flex-direction: column;
+    }
 }
