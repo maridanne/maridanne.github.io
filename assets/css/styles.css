@@ -20,7 +20,7 @@ body {
 }
 
 /* ALL SECTIONS */
-#cover, #about {
+#cover, #about, #resume {
     padding: 20px 0;
     background-color: violet;
 }
@@ -77,12 +77,12 @@ body {
     background-color: yellow;
     
 }
-.short-desc, .long-desc, .technologies-used, .other-interests{
+.short-desc, .long-desc, .technologies-stack, .other-interests{
     flex: 1;
     min-width: 300px;
     background-color: crimson;
 }
-.short-desc,  .technologies-used{
+.short-desc,  .technologies-stack{
     font-size: 1.25rem;
 }
 
@@ -90,7 +90,7 @@ body {
     font-size: 1rem;
     color: #555;
 }
-.technologies-used, .other-interests {
+.technologies-stack, .other-interests {
     flex: 1;
     min-width: 300px;
     background-color: deeppink;
@@ -108,3 +108,6 @@ body {
         flex-direction: column;
     }
 }
+
+/* RESUME SECTION */
+
