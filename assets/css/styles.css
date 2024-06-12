@@ -20,7 +20,7 @@ body {
 }
 
 /* ALL SECTIONS */
-#cover, #about, #resume, #portfolio {
+#cover, #about, #resume, #portfolio, #contact {
     padding: 20px 0;
     background-color: violet;
 }
