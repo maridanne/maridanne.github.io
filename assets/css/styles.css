@@ -37,8 +37,7 @@ header{
 .two-cols-container {
     display: flex;
     gap: 20px;
-    background-color: orange;
-
+    flex-wrap: wrap;
 }
 /* Media query for mobile devices */
 @media (max-width: 768px) {
