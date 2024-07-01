@@ -2,32 +2,42 @@ body {
     font-family: Inter, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: aqua;
 
 }
 .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #FFFAF0;
+    background-color: #FFFFFF;
     padding: 20px;
 }
 
-.nav-item{
+header{
+    background-color: #F5DAD2;
+}
+
+#homeBtn{
+    border: black 1px solid;
+}
+
+.navbar-nav{
     font-size: 1.25rem;
-    color: black;
+    color: #75A47F;
     cursor: pointer;
     text-decoration: none;
 }
 
 /* ALL SECTIONS */
 #cover, #about, #resume, #portfolio, #contact {
-    padding: 20px 0;
+    padding: 20px 20px;
     background-color: violet;
 }
 /* COVER SECTION */
-.cover-container {
+.two-cols-container {
     display: flex;
     gap: 20px;
+    background-color: orange;
 
 }
 /* Media query for mobile devices */
@@ -86,10 +96,6 @@ body {
     font-size: 1.25rem;
 }
 
-.long-desc, .other-interests{
-    font-size: 1rem;
-    color: #555;
-}
 .technologies-stack, .other-interests {
     flex: 1;
     min-width: 300px;
