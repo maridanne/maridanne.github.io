@@ -2,7 +2,8 @@ body {
     font-family: Inter, sans-serif;
     margin: 0;
     padding-top: 50px;
-    background-color: aqua;
+    background-color: #FCFFE0;
+    color: #75A47F;
 
 }
 
@@ -22,6 +23,7 @@ header{
     z-index: 1000;
     transform: translateY(-100%);
     transition: transform 0.5s ease;
+    
 }
 header.visible {
     transform: translateY(0);
@@ -65,10 +67,11 @@ header.visible {
 /* ALL SECTIONS */
 #cover, #about, #resume, #portfolio, #contact {
     padding: 20px 20px;
-    background-color: violet;
+    background-color: #FCFFE0;
 }
 /* COVER SECTION */
 .two-cols-container {
+    margin-top: 30px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -86,8 +89,6 @@ header.visible {
 .maridanne, .description{
     flex: 1;
     min-width: 300px;
-    background-color: green;
-
 }
 
 .maridanne{
@@ -114,14 +115,14 @@ header.visible {
 .about-desc, .tech-interest {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    background-color: yellow;
-    
+    gap: 20px;  
+}
+.tech-interest h4{
+     text-align: center;
 }
 .short-desc, .long-desc{
     flex: 1;
     min-width: 300px;
-    background-color: crimson;
 }
 .short-desc,  .technologies-stack{
     font-size: 1.25rem;
@@ -130,16 +131,15 @@ header.visible {
 .technologies-stack, .other-interests {
     flex: 1;
     min-width: 300px;
-    background-color: deeppink;
 }
 
 .d-flex{
-    background-color: aquamarine;
+    background-color: #E0E8CE;
     margin: 30px;
     border-radius: 50px;
     padding: 35px;
-
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -153,24 +153,27 @@ header.visible {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    background-color: yellow;
 }
 
 .education, .work-experience{
     flex: 1;
     min-width: 300px;
-    background-color: crimson;
+
+}
+.resume-content{
+    background-color: #E0E8CE;
+}
+.education {
+    font-size: .5em;
 }
 .skills, .achievements{
     flex: 1;
     min-width: 300px;
-    background-color: deeppink;
 }
 .resume-container h4{
     text-align: center;
 }
 .resume-content{
-    background-color: skyblue;
     margin: 30px;
     border-radius: 50px;
     padding: 35px;
@@ -189,7 +192,6 @@ li{
     list-style: none;
 }
 .proj-1, .proj-2{
-    background-color: olive;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +222,6 @@ li{
 .map, .contact-info{
     flex: 1;
     min-width: 300px;
-    background-color: green;
     flex-direction: column;
 }
 iframe {
@@ -232,7 +233,12 @@ iframe {
     border-radius: 20px;
 }
 .contact-info h4{
-    margin-top: 40px;
+    margin-top: 20px;
+}
+.contact-info{
+    border-radius: 50px;
+    padding: 35px;
+    margin-left: 50px;
 }
 
 
@@ -240,6 +246,6 @@ iframe {
 footer {
     text-align: center;
     padding: 30px;
-    background-color: DarkSalmon;
+    background-color: #F5DAD2;
     color: white;
 }
