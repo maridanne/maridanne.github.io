@@ -5,14 +5,14 @@ body {
     background-color: aqua;
 
 }
-.wrapper {
+
+/* .wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     background-color: #FFFFFF;
     padding: 20px;
-}
-
+} */
 header{
     background-color: #F5DAD2;
 }
@@ -39,15 +39,15 @@ header{
     gap: 20px;
     flex-wrap: wrap;
 }
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .cover-container {
-        flex-direction: column;
-    }
-    
-    .wrapper {
-        padding: 0 20px;
-    }
+
+
+.maridanne img {
+    width: 300px;
+    height: auto;
+
+    display: block;
+    margin: 0 auto;  
+    border-radius: 50px;
 }
 .maridanne, .description{
     flex: 1;
@@ -56,10 +56,8 @@ header{
 
 }
 
-.maridanne img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.maridanne{
+    text-align: center;
 }
 
 .social-links {
@@ -86,7 +84,7 @@ header{
     background-color: yellow;
     
 }
-.short-desc, .long-desc, .technologies-stack, .other-interests{
+.short-desc, .long-desc{
     flex: 1;
     min-width: 300px;
     background-color: crimson;
@@ -104,6 +102,8 @@ header{
 .d-flex{
     background-color: aquamarine;
     margin: 30px;
+    border-radius: 50px;
+    padding: 35px;
 
 }
 
@@ -115,13 +115,97 @@ header{
 }
 
 /* RESUME SECTION */
+.res-row-1, .res-row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: yellow;
+}
+
+.education, .work-experience{
+    flex: 1;
+    min-width: 300px;
+    background-color: crimson;
+}
+.skills, .achievements{
+    flex: 1;
+    min-width: 300px;
+    background-color: deeppink;
+}
+.resume-container h4{
+    text-align: center;
+}
+.resume-content{
+    background-color: skyblue;
+    margin: 30px;
+    border-radius: 50px;
+    padding: 35px;
+}
 
 /* PORTFOLIO SECTION */
+
+.portfolio-container img{
+    width: 1000px;
+    height: auto;
+    display: block;
+    margin: 0 auto;  
+    border-radius: 50px;
+}
+li{
+    list-style: none;
+}
+.proj-1, .proj-2{
+    background-color: olive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-container .d-flex{
+    max-width: 900px;
+    height: auto;
+    border: solid 1px #ddd; 
+    border-radius: 3px;
+}
+.portfolio-container .p-2{
+    border: solid 1px #ddd; 
+    border-radius: 5px;
+    margin: 10px 20px;
+    font-size: .7em;
+    display: block;
+
+}
+
+/* CONTACT SECTION */
+.contact-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.map, .contact-info{
+    flex: 1;
+    min-width: 300px;
+    background-color: green;
+    flex-direction: column;
+}
+iframe {
+    border-radius: 50px;
+    max-width: 400px;
+    height: 300px;
+    display: block;
+    margin: 0 auto;  
+    border-radius: 20px;
+}
+.contact-info h4{
+    margin-top: 40px;
+}
+
 
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 30px;
     background-color: DarkSalmon;
     color: white;
 }
