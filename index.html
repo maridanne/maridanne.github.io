@@ -49,6 +49,9 @@
                 </div>
             </nav>
         </header>
+        <div class="down-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
         <!-- END HEADER -->
 
         <!-- MAIN CONTENT -->
@@ -316,7 +319,7 @@
             }
         });
 
-        document.querySelector('.navbar-toggler').addEventListener('click', function () {
+        document.querySelector('.down-arrow').addEventListener('click', function () {
             const header = document.querySelector('header');
             header.classList.toggle('visible');
         });

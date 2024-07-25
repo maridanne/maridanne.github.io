@@ -26,13 +26,28 @@ header{
 header.visible {
     transform: translateY(0);
 }
+
+.down-arrow {
+    display: none;
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    z-index: 1001;
+    cursor: pointer;
+}
 @media (max-width: 768px) {
     header {
-        transform: translateY(calc(-100% + 40px)); /* Show a part of the hamburger menu */
+        transform: translateY(calc(-100%)); /* Show a part of the down arrow */
     }
 
-    header.visible {
-        transform: translateY(0);
+    .down-arrow {
+        display: block;
+    }
+
+    header.visible ~ .down-arrow {
+        display: none;
     }
 }
 
