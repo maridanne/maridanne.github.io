@@ -26,6 +26,15 @@ header{
 header.visible {
     transform: translateY(0);
 }
+@media (max-width: 768px) {
+    header {
+        transform: translateY(calc(-100% + 40px)); /* Show a part of the hamburger menu */
+    }
+
+    header.visible {
+        transform: translateY(0);
+    }
+}
 
 #homeBtn{
     border: black 1px solid;
