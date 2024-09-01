@@ -2,31 +2,38 @@ body {
     font-family: Inter, sans-serif;
     margin: 0;
     padding-top: 50px;
-    background-color: #FCFFE0;
-    color: #75A47F;
-
+    background-repeat: no-repeat;
+    color: black;
+    background-image: url(../img/bg-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/* .wrapper {
+.wrapper {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #FFFFFF;
     padding: 20px;
-} */
+}
 
 header{
-    background-color: #F5DAD2;
+    background-color: #663333;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     transform: translateY(-100%);
     transition: transform 0.5s ease;
-    
 }
 header.visible {
     transform: translateY(0);
+}
+
+header img{
+
+    height: 50px;
+    width: auto;
 }
 
 .down-arrow {
@@ -54,37 +61,57 @@ header.visible {
 }
 
 #homeBtn{
-    border: black 1px solid;
+    border: #FFCCCC 1px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFCCCC;
 }
 
-.navbar-nav{
+.navbar-nav a{
     font-size: 1.25rem;
-    color: #75A47F;
+    color: #FFCCCC;
     cursor: pointer;
     text-decoration: none;
+    position: relative;
+    transition: font-size 0.3s ease;
+    display: inline-block;
+}
+.navbar-nav a:hover{
+    font-size: 1.75rem;
+    color: #FFCCCC;
 }
 
 /* ALL SECTIONS */
 #cover, #about, #resume, #portfolio, #contact {
     padding: 20px 20px;
-    background-color: #FCFFE0;
+    background-color: GREEN;
+    background-color: transparent;
 }
 /* COVER SECTION */
 .two-cols-container {
-    margin-top: 30px;
+    margin-top: 5px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
+.vision-to-life, .personal-info{
+    border: 1px solid #FFCCCC;
+    border-radius: 10px;
+    padding: 10px;
+}
+.personal-info p{
+    margin-bottom: 0;
+}
 
 .maridanne img {
-    width: 300px;
+    width: 250px;
     height: auto;
-
     display: block;
-    margin: 0 auto;  
-    border-radius: 50px;
+    margin: 0 auto; 
+    margin-top: 20px;
+    border: 1px solid #FFCCCC;
+    border-radius: 10px;
 }
 .maridanne, .description{
     flex: 1;
@@ -93,6 +120,12 @@ header.visible {
 
 .maridanne{
     text-align: center;
+}
+.maridanne h1{
+    font-size: 1.5em;
+}
+.maridanne p{
+    font-size: .8em;
 }
 
 .social-links {
@@ -108,10 +141,10 @@ header.visible {
 }
 
 .social-links a:hover {
-    color: #2d4373; /* Darker shade on hover */
+    color: #663333; /* Darker shade on hover */
 }
 
-/* ABOUT SECTION */
+/* ABOUT SECTION */n
 .about-desc, .tech-interest {
     display: flex;
     flex-wrap: wrap;
@@ -246,6 +279,6 @@ iframe {
 footer {
     text-align: center;
     padding: 30px;
-    background-color: #F5DAD2;
+    background-color: #663333;
     color: white;
 }
