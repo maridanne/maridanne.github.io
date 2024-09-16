@@ -40,6 +40,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#contact">Contact</a>
                         </li>
+                        <li class="nav-item"></li>
+                            <button onclick="changeMode()">Mode</button>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#" id="homeBtn">Home</a>
                         </li>
@@ -178,13 +181,17 @@
                                 <div class="p-2"><img src="./assets/img/tech_stack/filamentphp.jpg" alt="FilamentPHP"
                                         class="img-fluid me-3 mb-2" style="width: 40px;"></div>
                                 <div class="p-2"><img src="./assets/img/tech_stack/mysql.png" alt="MySQL"
-                                        class="img-fluid me-3 mb-2" style="width: 40px;"></div>
+                                        class="img-fluid me-3 mb-2" style="width: 50px;"></div>
                                 <div class="p-2"><img src="./assets/img/tech_stack/sqlite.png" alt="Sqlite"
-                                        class="img-fluid me-3 mb-2" style="width: 60px;"></div>
+                                        class="img-fluid me-3 mb-2" style="width: 70px;"></div>
                                 <div class="p-2"><img src="./assets/img/tech_stack/git.png" alt="Git"
                                         class="img-fluid me-3 mb-2" style="width: 40px;"></div>
                                 <div class="p-2"><img src="./assets/img/tech_stack/github.png" alt="GitHub"
                                         class="img-fluid me-3 mb-2" style="width: 40px;"></div>
+                                <div class="p-2"><img src="./assets/img/tech_stack/bitbucket.png" alt="Bitbucket"
+                                    class="img-fluid me-3 mb-2" style="width: 40px;"></div>
+                                <div class="p-2"><img src="./assets/img/tech_stack/photoshop.png" alt="Photoshop"
+                                    class="img-fluid me-3 mb-2" style="width: 40px;"></div>
                                 <div class="p-2"><img src="./assets/img/tech_stack/figma.svg" alt="Figma"
                                         class="img-fluid me-3 mb-2" style="width: 30px;"></div>
                                 <div class="p-2"><img src="./assets/img/tech_stack/canva.png" alt="Canva"
@@ -214,40 +221,52 @@
             <!-- RESUME SECTION -->
             <section id="resume">
                 <div class="resume-container">
-                    <h2 style>Resume</h2> <br>
-                    <div class="res-row-1">
-                        <div class="education">
+                    <center><h2 style>Resume</h2></center><br>
+                    <div class="res-row">
+                        <div class="edu">
+                            <img src="assets/img/resume/educ.png" alt="Education" class="resume-logos">
                             <h4>Education</h4>
-                            <div class="resume-content">
-                                <h5>EASTERN VISAYAS STATE UNIVERSITY MAIN TACLOBAN</h5>
-                                <h6>Bachelor of Science in Information Technology</h6>
-                                <h6>2020-2024</h6>
-                                <p>Tacloban City</p><br>
-                                <h5>ABUYOG ACADEMY ABUYOG, LEYTE</h5>
-                                <h6>JUNIOR AND SENIOR HIGH SCHOOL</h6>
-                                <h6>2014-2020</h6>
-                                <p>Abuyog, Leyte</p><br>
-                                <h5>B.V. Closa Central School</h5>
-                                <h6>Elementary</h6>
-                                <h6>2008-2014</h6>
-                                <p>Abuyog, Leyte</p>
-                            </div>
                         </div>
-                        <div class="work-experience">
-                            <h4>Work Experience</h4>
-                            <div class="resume-content">
-                                <p>Collaborated with the capstone team in developing a barangay information management
-                                    system for Barugo, Leyte, streamlining resident data management, report generation,
-                                    and data analysis.</p>
-                                <p>Built a next-gen tourism accreditation monitoring system (TAMSTAR PROJECT) for DOT
-                                    Region 8 in collaboration with selected EVSU IT students and EVSU ICT Department.
-                                </p>
-                            </div>
+                        <div class="edu-desc">
+                            <h5>NORTHRIDGE INSTITUTE OF BUSINESS AND TECHNOLOGY INC.</h5>
+                            <h6>Creative Web Design</h6>
+                            <h6>2024</h6><br>
+                            <h5>EASTERN VISAYAS STATE UNIVERSITY MAIN TACLOBAN</h5>
+                            <h6>Bachelor of Science in Information Technology</h6>
+                            <h6>2020-2024</h6><br>
+                            <h5>ASIA PACIFIC CAREER COLLEGE</h5>
+                            <h6>Computer Hardware Servicing NCII</h6>
+                            <h6>2017-2018</h6><br>
+                            <h5>ABUYOG ACADEMY ABUYOG, LEYTE</h5>
+                            <h6>JUNIOR AND SENIOR HIGH SCHOOL</h6>
+                            <h6>2014-2020</h6><br>
+                            <h5>B.V. Closa Central School</h5>
+                            <h6>Elementary</h6>
+                            <h6>2008-2014</h6>
                         </div>
                     </div>
-                    <div class="res-row-2">
+                    <hr>
+                    <div class="res-row">
+                        <div class="work">
+                            <img src="assets/img/resume/work-experience.png" alt="Work Experience" class="resume-logos">
+                            <h4>Work Experience</h4>
+                        </div>
+                        <div class="work-desc">
+                            <p>Collaborated with the capstone team in developing a barangay information management
+                                system for Barugo, Leyte, streamlining resident data management, report generation,
+                                and data analysis.</p>
+                            <p>Built a next-gen tourism accreditation monitoring system (TAMSTAR PROJECT) for DOT
+                                Region 8 in collaboration with selected EVSU IT students and EVSU ICT Department.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="res-row">
                         <div class="skills">
+                            <img src="assets/img/resume/skills.png" alt="Skills" class="resume-logos">
                             <h4>Skills</h4>
+                        </div>
+                        <div class="skills-desc">
                             <div class="d-flex flex-wrap">
                                 <div class="p-2">HTML</div>
                                 <div class="p-2">CSS</div>
@@ -262,15 +281,27 @@
                                 <div class="p-2">Django</div>
                                 <div class="p-2">Git</div>
                                 <div class="p-2">GitHub</div>
+                                <div class="p-2">Bitbucket</div>
+                                <div class="p-2">Graphic Designing</div>
+                                <div class="p-2">Adobe Photoshop</div>
+                                <div class="p-2">Canva</div>
+                                <div class="p-2">Figma</div>
+                                <div class="p-2">Video Editing</div>
+                                <div class="p-2">Social Media Management</div>
                                 <div class="p-2">MS Office</div>
                                 <div class="p-2">Data Analysis</div>
                                 <div class="p-2">Collaboration</div>
                             </div>
                         </div>
-                        <div class="achievements">
+                    </div>
+                    <hr>
+                    <div class="res-row">
+                        <div class="achieve">
+                            <img src="assets/img/resume/achievements.png" alt="Achievements" class="resume-logos">
                             <h4>Achievements</h4>
-                            <div class="resume-content">
-                                <h5>ACADEMIC</h5>
+                        </div>
+                        <div class="achieve-desc">
+                            <h5>ACADEMIC</h5>
                                 <ul>
                                     <li>WITH LATIN HONORS (CUM LAUDE)</li>
                                     <li>WITH HIGH HONORS (HIGH SCHOOL SENIOR HIGH)</li>
@@ -280,10 +311,9 @@
                                 <h5>PROFESSIONAL</h5>
                                 <ul>
                                     <li>TAMSTAR Project (Accreditation Monitoring System for the Department of Tourism
-                                        Region 8)</li>
+                                        Region 8)</li><br>
                                     <li>Barangay Information System for Barugo, Leyte</li>
                                 </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -348,6 +378,10 @@
         <p>© 2024 All Rights Reserved<br>
     </footer>
     <script>
+        function changeMode() {
+            var element = document.body;
+            element.classList.toggle("change-mode");
+            }
         document.addEventListener('mousemove', function (e) {
             const header = document.querySelector('header');
             const cursorY = e.clientY;
